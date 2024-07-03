@@ -51,24 +51,23 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
 							</svg>
 						</button>
 					</td>
-					
 				</tr>
 			);
 		});
-    };
-    const copyToClipboard = async (url: string) => {
-        try {
-            await navigator.clipboard.writeText(`${serverUrl}/shortUrl/${url}`)
-            alert(`URL copied: ${serverUrl}/shortUrl/${url}`);
-        } catch (error) {
-            console.log(error)
-        }
-    }
+	};
+	const copyToClipboard = async (url: string) => {
+		try {
+			await navigator.clipboard.writeText(`${serverUrl}/shortUrl/${url}`);
+			alert(`URL copied: ${serverUrl}/shortUrl/${url}`);
+		} catch (error) {
+			console.log(error);
+		}
+	};
 
-    // const deleteUrl = async (id: string) => {
-    //     const response = await axios.delete(`${serverUrl}/shortUrl/${id}`)
-    //     console.log(response)
-    // }
+	// const deleteUrl = async (id: string) => {
+	//     const response = await axios.delete(`${serverUrl}/shortUrl/${id}`)
+	//     console.log(response)
+	// }
 	return (
 		<div className="container mx-auto pt-2 pb-10">
 			<div className="relative overflow-x-auto shadow-sm sm:rounded-lg">
