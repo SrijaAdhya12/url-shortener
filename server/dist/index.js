@@ -12,7 +12,6 @@ const app = (0, express_1.default)();
 app.get("/", (req, res) => {
     res.send("Hello World");
 });
-app.get("/api/", shortUrl);
 app.listen(port, () => {
     console.log(`Server started succesfully on port: ${port}`);
 });
