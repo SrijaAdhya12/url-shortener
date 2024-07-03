@@ -9,9 +9,14 @@ dotenv_1.default.config();
 const port = process.env.PORT || 5001;
 const app = (0, express_1.default)();
 
-app.get("/", (req, res) => {
-    res.send("Hello World");
-});
+// app.get("/", (req, res) => {
+//     res.send("Hello World");
+// });
+
+app.get("/api/", shortUrl);
+
+app.get("/api", (_, res) => res.send("Welcome to URL_SHORTENER"));
+
 app.listen(port, () => {
     console.log(`Server started succesfully on port: ${port}`);
 });
