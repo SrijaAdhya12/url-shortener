@@ -19,7 +19,7 @@ const DataTable: React.FunctionComponent<IDataTableProps> = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {renderTableData()}
+                        {/* {renderTableData()} */}
                     </tbody>
             </table>
             </div>
