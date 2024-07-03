@@ -15,7 +15,7 @@ const app = (0, express_1.default)();
 
 app.get("/api/", shortUrl);
 
-app.get("/api", (_, res) => res.send("Welcome to URL_SHORTENER"));
+app.get("/", (_, res) => res.send("Welcome to URL_SHORTENER"));
 
 app.listen(port, () => {
     console.log(`Server started succesfully on port: ${port}`);
