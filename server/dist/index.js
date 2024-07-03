@@ -13,7 +13,7 @@ const app = (0, express_1.default)();
 //     res.send("Hello World");
 // });
 
-app.get("/api/", shortUrl);
+// app.get("/api/", shortUrl);
 
 app.get("/", (_, res) => res.send("Welcome to URL_SHORTENER"));
 
