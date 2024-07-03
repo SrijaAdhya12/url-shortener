@@ -8,9 +8,11 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const port = process.env.PORT || 5001;
 const app = (0, express_1.default)();
-app.get("/", (req, res) => {
+
+app.get("/api", (req, res) => {
     res.send("Hello World");
 });
+app.use("/api/", shortUrl);
 app.listen(port, () => {
     console.log(`Server started succesfully on port: ${port}`);
 });
