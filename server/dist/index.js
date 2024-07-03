@@ -9,7 +9,7 @@ dotenv_1.default.config();
 const port = process.env.PORT || 5001;
 const app = (0, express_1.default)();
 
-app.get("/api", (req, res) => {
+app.get("/", (req, res) => {
     res.send("Hello World");
 });
 app.use("/api/", shortUrl);
