@@ -18,7 +18,7 @@ app.use((0, cors_1.default)({
     origin: "http://localhost:3000",
     credentials: true
 }));
-app.get("/api/", shorturl_1.default);
+app.use("/api/", shorturl_1.default);
 app.get('/api', (_, res) => res.send('Welcome to URL_SHORTENER'));
 app.listen(port, () => {
     console.log(`Server started succesfully on port: ${port}`);

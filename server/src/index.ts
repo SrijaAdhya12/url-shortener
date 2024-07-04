@@ -17,7 +17,7 @@ app.use(cors({
 }))
 
 
-app.get("/api/", shortUrl);
+app.use("/api/", shortUrl);
 
 
 app.get('/api', (_, res) => res.send('Welcome to URL_SHORTENER'))
