@@ -20,7 +20,7 @@ app.use(cors({
 app.use("/api/", shortUrl);
 
 
-app.get('/api', (_, res) => res.send('Welcome to URL_SHORTENER'))
+app.get('/', (_, res) => res.send('Welcome to URL_SHORTENER'))
 
 app.listen(port, () => {
     console.log(`Server started succesfully on port: ${port}`)
