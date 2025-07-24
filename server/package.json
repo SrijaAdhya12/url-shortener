@@ -26,7 +26,7 @@
 		"@types/mongoose": "^5.11.97",
 		"@types/node": "^20.14.9",
 		"nodemon": "^3.1.4",
-		"pkgroll": "^2.4.2",
+		"pkgroll": "^2.14.3",
 		"ts-node": "^10.9.2",
 		"typescript": "^5.5.3"
 	}
